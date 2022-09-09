@@ -37,6 +37,10 @@ namespace Exercise2
                             RunExerciseFive();
                             break;
 
+                        case 6:
+                            RunExerciseSix();
+                            break;
+
                         case -1:
                             keepAlive = false;
                             break;
@@ -110,10 +114,19 @@ namespace Exercise2
             Console.WriteLine(newString);
             newString = newString.Remove(3, 4);
             Console.WriteLine(newString);
-            String strToAdd = "6,7,8,9,10";
-            //newString = newString.
-
+            String strToAdd = ",6,7,8,9,10";
+            newString = newString.Insert(6, strToAdd);
+            Console.WriteLine(newString);
         }
 
+        private static void RunExerciseSix()
+        {
+            Console.WriteLine("Enter your first number: ");
+            var numA = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter your last number: ");
+            var numB = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine();
+        }
     } //End of class
 } //End of namespace
